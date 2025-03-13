@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You, Sereen ❤️</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Kufi+Arabic:wght@100..900&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Heart Background (Over Everything) -->
+    <div class="wrapper">
+
+        <svg class="heart" version="1.1"
+             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+             x="0px" y="0px" width="101.7px" height="87.6px" viewBox="0 0 101.7 87.6" enable-background="new 0 0 101.7 87.6"
+             xml:space="preserve">
+        <path d="M51,12.8c0-0.1-0.1-0.1-0.1-0.2c0,0.1-0.1,0.1-0.1,0.2C31-10.7,0,0.2,0,28.9c0,27.6,40.7,56.9,50.9,58.8
+            c10.1-1.8,50.9-31.1,50.9-58.8C101.7,0.2,70.7-10.7,51,12.8z"/>
+        </svg>
+        </div>
+
+    <!-- Name Display -->
+    <h1>Sereen ❤️</h1>
+
+    <!-- Typing Effect Container -->
+    <div class="typed-container">
+        <span id="typed-output"></span>
+    </div>
+    <script>
+        $(function() {
+  $love = $('.heart');
+  for( var i = 0; i < 4; i++) {
+    $('.wrapper').append($love.clone()); 
+  }
+});
+    </script>
+    <!-- Typed.js for Smooth Typing Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed("#typed-output", {
+            strings: [
+                "You're my everything, Sereen ❤️",
+                "Every heartbeat whispers your name...",
+                "With every breath, I love you more.",
+                "You're the light in my life, Sereen! ❤️"
+            ],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true,
+            showCursor: true,
+            cursorChar: "|"
+        });
+    </script>
+</body>
+
+</html>
