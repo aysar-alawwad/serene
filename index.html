@@ -25,6 +25,23 @@
 </head>
 
 <body>
+  <script>
+    // Wait for the audio to be ready to play
+    window.onload = function() {
+      var audio = document.getElementById('myAudio');
+      
+      // Check if audio is ready
+      audio.addEventListener('canplaythrough', function() {
+        audio.play(); // Ensure audio starts playing
+      }, false);
+    };
+  </script>
+      <audio id="myAudio" autoplay loop>
+    <source src="song.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+
     <!-- Heart Background (Over Everything) -->
     <div class="wrapper">
 
